@@ -184,9 +184,9 @@ template {
 /* end of normalization -------------------------------------------*/
 body,
 .blur::before {
-  background: url("/img/coder.jpg") 0 / cover fixed;
-  background: url("/img/office.jpg") 0 / cover fixed;
-  background: url("/img/new-york.jpg") 0 / cover fixed;
+  /* background: url("/img/coder.jpg") 0 / cover fixed; */
+  /* background: url("/img/office.jpg") 0 / cover fixed; */
+  /* background: url("/img/new-york.jpg") 0 / cover fixed; */
   background: linear-gradient(200deg, #1dbfff, #f8fc23) 0 / cover fixed;
   /* background: linear-gradient(200deg, #82fd30, #ff47b2) 0 / cover fixed; */
   /* background: linear-gradient(200deg, #fca119, #692cf8) 0 / cover fixed; */
@@ -240,6 +240,7 @@ button {
   grid-auto-columns: 70px;
   grid-template-rows: minmax(90px, auto) repeat(5, 70px);
   font-size: 2rem;
+  text-align: center;
   border-top-left-radius: 13px;
   border-top-right-radius: 13px;
   align-content: center;
