@@ -220,6 +220,7 @@ body {
   font-size: 18px;
   font-weight: 400;
   letter-spacing: 0.03rem;
+  overflow: hidden;
 }
 
 button {
@@ -247,7 +248,9 @@ button {
 }
 
 .calc button {
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   cursor: pointer;
   background: rgba(11, 34, 39, 0.55);
   border: 1px solid rgba(150, 189, 199, 0.1);
