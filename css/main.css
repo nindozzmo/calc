@@ -182,6 +182,7 @@ template {
 }
 
 /* end of normalization -------------------------------------------*/
+
 body,
 .blur::before {
   /* background: url("/img/coder.jpg") 0 / cover fixed; */
