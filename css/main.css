@@ -185,6 +185,7 @@ template {
 /* end of normalization -------------------------------------------*/
 
 body {
+  background: -o-linear-gradient(250deg, #1dbfff, #f8fc23) 0 / cover fixed;
   background: linear-gradient(200deg, #1dbfff, #f8fc23) 0 / cover fixed;
   font-family: "Poppins", sans-serif;
   font-size: 18px;
@@ -199,44 +200,51 @@ button {
 }
 
 select {
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
   padding: 0.4rem;
   width: 230px;
-  height: 2.5rem;
+  height: 2.7rem;
   text-align: center;
-  -webkit-appearance: auto;
-  appearance: auto;
+  text-decoration: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+       appearance: none;
   cursor: pointer;
   outline: none;
-  filter: opacity(0.8);
-}
-
-option {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  -webkit-filter: opacity(0.8);
+          filter: opacity(0.8);
 }
 
 button.choise {
   height: 1.74rem;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   outline: none;
-  filter: opacity(0.7);
+  -webkit-filter: opacity(0.7);
+          filter: opacity(0.7);
   cursor: pointer;
 }
 
 button.choise:hover {
-  filter: opacity(0.8);
+  -webkit-filter: opacity(0.8);
+          filter: opacity(0.8);
 }
 
 button.choise:active {
-  filter: opacity(1);
+  -webkit-filter: opacity(1);
+          filter: opacity(1);
 }
 
 .wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   min-height: 100vh;
   overflow: hidden;
   position:relative;
@@ -246,19 +254,29 @@ button.choise:active {
   position: absolute;
   width: 280px;
   display: block;
-  align-self: flex-start;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
 }
 
 .formbg {
   height: 60px;
   width: 280px;
   background-color: rgba(240, 248, 255, 0.2);
-  box-shadow: 4px 4px 8px 0px rgba(20, 43, 66, 0.2);
+  -webkit-box-shadow: 4px 4px 8px 0px rgba(20, 43, 66, 0.2);
+          box-shadow: 4px 4px 8px 0px rgba(20, 43, 66, 0.2);
   border-bottom-left-radius: 7px;
   border-bottom-right-radius: 7px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .blur-before {
@@ -266,17 +284,23 @@ button.choise:active {
   width: 280px;
   position: absolute;
   display: block;
-  box-shadow: 4px 4px 8px 0px rgba(20, 43, 66, 0.4);
   border-top-left-radius: 13px;
   border-top-right-radius: 13px;
   overflow: hidden;
 }
 
 .blur {
+  background: -o-linear-gradient(250deg, #1dbfff, #f8fc23) 0 / cover fixed;
   background: linear-gradient(200deg, #1dbfff, #f8fc23) 0 / cover fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   content: '';
   margin: -30px;
   position: absolute;
@@ -284,15 +308,20 @@ button.choise:active {
   right: 0;
   bottom: 0;
   left: 0;
-  filter: blur(10px);
-  box-sizing: content-box;      
+  -webkit-filter: blur(10px);
+          filter: blur(10px);
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;      
   z-index: -1;
 }
 
 .calcwrap {
   margin-top: 3.75rem;
+  margin-bottom: 3.75rem;
   display: block;
   position: relative;
+  -webkit-box-shadow: 4px 4px 8px 0px rgba(20, 43, 66, 0.4);
+          box-shadow: 4px 4px 8px 0px rgba(20, 43, 66, 0.4);
   border-top-left-radius: 13px;
   border-top-right-radius: 13px;
   overflow: hidden;
@@ -300,20 +329,29 @@ button.choise:active {
 
 .calc {
   position: relative;
+  display: -ms-grid;
   display: grid;
   grid-auto-columns: 70px;
+  -ms-grid-rows: minmax(90px, auto) (70px)[5];
   grid-template-rows: minmax(90px, auto) repeat(5, 70px);
   font-size: 2rem;
   border-top-left-radius: 13px;
   border-top-right-radius: 13px;
-  align-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
   overflow: hidden;
 }
 
 .calc button {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   cursor: pointer;
   background: rgba(11, 34, 39, 0.55);
   border: 1px solid rgba(150, 189, 199, 0.1);
@@ -322,7 +360,9 @@ button.choise:active {
 
 .calc button:hover {
   background: rgba(61, 100, 110, 0.3);
-  transition-duration: 100ms;
+  -webkit-transition-duration: 100ms;
+       -o-transition-duration: 100ms;
+          transition-duration: 100ms;
 }
 
 .calc button:active {
@@ -330,16 +370,26 @@ button.choise:active {
 }
 
 .output {
+  -ms-grid-column-span: 4;
   grid-column: span 4;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: flex-end;
-  justify-content: space-around;
-  flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   word-wrap: break-word;
   word-break: break-all;
   background: rgba(7, 7, 5, 0.7);
   color: white;
   font-size: 2.1rem;
+  text-decoration: none;
   padding: 0.5rem;
   border-top-left-radius: 13px;
   border-top-right-radius: 13px;
@@ -370,7 +420,10 @@ button.result {
 }
 
 .result {
+  -ms-grid-column: 4;
   grid-column: 4;
+  -ms-grid-row: 5;
+  -ms-grid-row-span: 2;
   grid-row: 5 / span 2;
 }
 
