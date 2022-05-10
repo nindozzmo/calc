@@ -17,6 +17,10 @@ function setBg() {
       case "newYork":
         y = "url(img/new-york-min.jpg) 0 / cover fixed"
         break;
+      
+        case "kyiv":
+        y = "url(img/kyiv-min.jpg) 0 / cover fixed"
+        break;
 
       case "yellowBlue":
         y = "linear-gradient(200deg, #1dbfff, #f8fc23) 0 / cover fixed";
