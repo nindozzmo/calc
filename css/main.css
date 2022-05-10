@@ -209,7 +209,7 @@ select {
   font-size: 1.2rem;
   color: rgba(0, 0, 0, 0.8);
   padding: 0.4rem;
-  width: 235px;
+  width: 245px;
   height: 2.7rem;
   text-align: center;
   text-decoration: none;
@@ -319,8 +319,8 @@ button.choise:active {
 }
 
 .calcwrap {
-  margin-top: 3.75rem;
-  margin-bottom: 3.75rem;
+  margin-top: 4.06rem;
+  margin-bottom: 4.06rem;
   display: block;
   position: relative;
   -webkit-box-shadow: 4px 4px 8px 0px rgba(20, 43, 66, 0.4);
