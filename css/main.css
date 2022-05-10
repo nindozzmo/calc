@@ -202,10 +202,10 @@ select {
   margin-bottom: 0.5rem;
   padding: 0.4rem;
   width: 230px;
+  height: 2.5rem;
   text-align: center;
-  /* -webkit-appearance: auto; */
-  -webkit-appearance: none;
-  appearance: none;
+  -webkit-appearance: auto;
+  appearance: auto;
   cursor: pointer;
   outline: none;
   filter: opacity(0.8);
