@@ -199,6 +199,7 @@ button {
 }
 
 select {
+  margin-top: 0.5rem;
   margin-bottom: 0.5rem;
   padding: 0.4rem;
   width: 230px;
@@ -237,12 +238,14 @@ button.choise:active {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+  overflow: hidden;
+  position:relative;
 }
 
 .formwrap {
   position: absolute;
   width: 280px;
-  display: flex;
+  display: block;
   align-self: flex-start;
 }
 
@@ -262,7 +265,7 @@ button.choise:active {
   height: 440px;
   width: 280px;
   position: absolute;
-  display: flex;
+  display: block;
   box-shadow: 4px 4px 8px 0px rgba(20, 43, 66, 0.4);
   border-top-left-radius: 13px;
   border-top-right-radius: 13px;
@@ -284,6 +287,15 @@ button.choise:active {
   filter: blur(10px);
   box-sizing: content-box;      
   z-index: -1;
+}
+
+.calcwrap {
+  margin-top: 3.75rem;
+  display: block;
+  position: relative;
+  border-top-left-radius: 13px;
+  border-top-right-radius: 13px;
+  overflow: hidden;
 }
 
 .calc {
