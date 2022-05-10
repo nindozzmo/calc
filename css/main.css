@@ -200,11 +200,20 @@ button {
 
 select {
   margin-bottom: 0.5rem;
-  width: 215px;
-  -webkit-appearance: auto;
-  appearance: auto;
+  padding: 0.4rem;
+  width: 230px;
+  text-align: center;
+  /* -webkit-appearance: auto; */
+  -webkit-appearance: none;
+  appearance: none;
+  cursor: pointer;
   outline: none;
   filter: opacity(0.8);
+}
+
+option {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 button.choise {
